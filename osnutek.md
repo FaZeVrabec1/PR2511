@@ -1,11 +1,11 @@
 # Podatkovno rudarjenje Google Play Store aplikacij
 ### Skupina 11
 
-|Ime|Vpisna številka|
-|:------- | ------- |
-|Filip Vrabec|63230358|
-|Klemen Krkovič |63230172|
-|Lan Miglič|63230211|
+|Ime|
+|:------- |  
+|Filip Vrabec|
+|Klemen Krkovič |
+|Lan Miglič|
 
 ## Opis problema 
 
