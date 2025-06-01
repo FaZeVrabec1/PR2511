@@ -35,18 +35,18 @@ Najprej smo podatke analizirali po kategorijah aplikacij, kjer smo izpostavili:
 
 Nato smo se osredotočili na načine monetizacije (npr. brezplačne aplikacije, aplikacije z oglasi, z nakupi v aplikaciji) ter analizirali njihovo razporeditev in povprečne ocene.
 
-![alt text](Images/Distribution_od_Monetization_Types)
+![alt text](images/Distribution_od_Monetization_Types.png)
 
 V nadaljevanju smo izvedli analizo naklonjenosti (bias), kjer smo določili izjemne aplikacije in jih primerjali z ostalimi – tako po kategorijah kot po načinu monetizacije.
 
-![alt text](Images/Bias_in_Catagories.png)
-![alt text](Images/Bias_in_Monetization.png)
+![alt text](images/Bias_in_Catagories.png)
+![alt text](images/Bias_in_Monetization.png)
 
 Izdelali smo tudi napovedovalna modela (RandomForestRegressor), ki napovedujeta, kakšno oceno bo imela aplikacija oziroma koliko prenosov lahko pričakujemo glede na izbrane lastnosti. Interaktiven način uporabe modela za napovedovanje je na voljo v Streamlit aplikaciji.
 
 Na koncu smo rezultate primerjali še s starimi podatki iz Google Play Store iz leta 2021, da bi ugotovili trende in spremembe skozi čas.
-![alt text](Images/Categories_install_change.png)
-![alt text](Images/Catagories_rating_change.png)
+![alt text](images/Categories_install_change.png)
+![alt text](images/Catagories_rating_change.png)
 
 ---
 **Koda:**
