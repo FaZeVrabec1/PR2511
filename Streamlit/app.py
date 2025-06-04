@@ -24,10 +24,10 @@ section = st.sidebar.radio("Go to", [
 
 @st.cache_data
 def load_data_new():
-    return pd.read_csv("./Data/New-data.csv")
+    return pd.read_csv("Data/New-data.csv")
 @st.cache_data
 def load_data_old():
-    return pd.read_csv("./Data/Google-Playstore_filtered.csv")
+    return pd.read_csv("Data/Google-Playstore_filtered.csv")
 
 store = load_data_new()
 old_store = load_data_old()
