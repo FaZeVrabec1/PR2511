@@ -24,10 +24,23 @@ section = st.sidebar.radio("Go to", [
 
 @st.cache_data
 def load_data_new():
-    return pd.read_csv("./Streamlit/Data/New-data.csv")
+    try:
+        return pd.read_csv("./Data/New-data.csv")
+    except FileNotFoundError:
+        try:
+            return pd.read_csv(".Streamlit/Data/New-data.csv")
+        except FileNotFoundError:
+            st.error("Data file not found. Please ensure the file exists in the specified path.")
+            
 @st.cache_data
 def load_data_old():
-    return pd.read_csv("./Streamlit/Data/Google-Playstore_filtered.csv")
+    try:
+        return pd.read_csv("./Data/Google-Playstore_filtered.csv")
+    except FileNotFoundError:
+        try:
+            return pd.read_csv(".Streamlit/Data/Google-Playstore_filtered.csv")
+        except FileNotFoundError:
+            st.error("Data file not found. Please ensure the file exists in the specified path.")
 
 store = load_data_new()
 old_store = load_data_old()
