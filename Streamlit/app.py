@@ -474,7 +474,7 @@ elif section == "Prediction Model":
         X = pd.get_dummies(X, columns=['Category'], drop_first=True)
         y = df[target_variable]
 
-        model_path = f'models/final_random_forest_model_{target_variable.lower()}.pkl'
+        model_path = f'final_random_forest_model_{target_variable.lower()}.pkl'
         if os.path.exists(model_path):
             final_model = joblib.load(model_path)
             st.info(f"Naložen model za napovedovanje **{target_variable}**.")
